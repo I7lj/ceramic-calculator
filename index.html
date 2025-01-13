@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة الأزرار والسيراميك</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>حاسبة الأزرار والسيراميك</h1>
+        <div class="form-container">
+            <!-- حقل طول الزر -->
+            <label for="buttonLength">طول الزر (بالسنتيمتر):</label>
+            <input type="number" id="buttonLength" value="10" placeholder="أدخل طول الزر">
+
+            <!-- حقول المساحة -->
+            <label for="areaLength">طول المساحة (بالمتر):</label>
+            <input type="number" id="areaLength" placeholder="أدخل طول المساحة">
+
+            <label for="areaWidth">عرض المساحة (بالمتر):</label>
+            <input type="number" id="areaWidth" placeholder="أدخل عرض المساحة">
+
+            <!-- حقل أبعاد السيراميك -->
+            <label for="tileLength">طول السيراميك (بالسنتيمتر):</label>
+            <input type="number" id="tileLength" placeholder="أدخل طول السيراميك">
+
+            <label for="tileWidth">عرض السيراميك (بالسنتيمتر):</label>
+            <input type="number" id="tileWidth" placeholder="أدخل عرض السيراميك">
+
+            <button onclick="calculate()">حساب الأزرار والسيراميك</button>
+
+            <div id="result"></div>
+        </div>
+
+        <footer>
+            <p>حقوق الطبع والنشر: المهندس حسن منذر عبد الواحد</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
